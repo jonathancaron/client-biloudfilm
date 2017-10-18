@@ -13,7 +13,7 @@
     <ul class="nav navbar-nav navbar-right">
       <li><a href="index.php">Home</a></li>
       <li><a href="bibliotheque.php">Bibliothèque</a></li>
-      <li class="btn-trial"><a href="#contact">Contact</a></li>
+      <li class="btn-trial"><a href="contact.php">Contact</a></li>
     </ul>
     </div>
   </div>
