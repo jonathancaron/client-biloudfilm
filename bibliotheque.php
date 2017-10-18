@@ -45,33 +45,83 @@
             <hr class="bottom-line">
           </div>
           <div class="feature-info">
+            <div class="fea">
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <img src="./img/films/1.jpg" alt="">
+                  <h4>Le Sens de la fête</h4>
+                  <p style="text-align: justify;">Max est traiteur depuis trente ans. Des fêtes il en a organisé des centaines, il est même un peu au bout du parcours. Aujourd'hui c'est un sublime mariage dans un château du 17ème siècle, un de plus, celui de Pierre et Héléna... </p>
+                </div>
+                <div class="fea-img pull-left">
 
-            <?php for ($i=1; $i < 7; $i++) {
-              $query=$bdd->prepare('SELECT id, titre, description FROM films WHERE id = :id');
-              $query->bindValue(':id',$i, PDO::PARAM_STR);
-              $query->execute();
-              $data=$query->fetch();
-              $id = $i;
-              $titre = $data['titre'];
-              $description = $data['description'];
-              $query->CloseCursor();
-
-              ?>
-
-              <div class="fea">
-                <div class="col-md-4">
-                  <div class="heading pull-right">
-                    <img src="./img/films/<?php echo $id ?>.jpg" alt="">
-                    <h4><?php echo $titre ?></h4>
-                    <p style="text-align: justify;"><?php echo $description ?></p>
-                  </div>
-                  <div class="fea-img pull-left">
-
-                  </div>
                 </div>
               </div>
-              <?php } ?>
+            </div>
 
+            <div class="fea">
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <img src="./img/films/2.jpg" alt="">
+                  <h4>Le Petit Spirou</h4>
+                  <p style="text-align: justify;">Petit Spirou, comme toute sa famille avant lui, a un destin professionnel tout tracé. Quand sa mère lui annonce qu’il intègrera dès la rentrée prochaine l’école des grooms, Petit Spirou, avec l’aide de ses copains, va profiter de ses derniers jours de classe pour déclarer sa flamme à Suzette. Et pas n’importe comment. Ils décident de vivre une aventure extraordinaire. </p>
+                </div>
+                <div class="fea-img pull-left">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="fea">
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <img src="./img/films/3.jpg" alt="">
+                  <h4>L'Ecole buissonnière</h4>
+                  <p style="text-align: justify;">Paris 1930. Paul n’a toujours eu qu’un seul et même horizon : les hauts murs de l’orphelinat, sévère bâtisse de la banlieue ouvrière parisienne. Confié à une joyeuse dame de la campagne, Célestine et à son mari, Borel, le garde-chasse un peu raide d’un vaste domaine en Sologne, l’enfant des villes, récalcitrant et buté, arrive dans un monde mystérieux et inquiétant, celui d’une région souveraine et sauvage.  </p>
+                </div>
+                <div class="fea-img pull-left">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="fea">
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <img src="./img/films/4.jpg" alt="">
+                  <h4>Blade Runner 2049</h4>
+                  <p style="text-align: justify;">En 2049, la société est fragilisée par les nombreuses tensions entre les humains et leurs esclaves créés par bioingénierie. L’officier K est un Blade Runner : il fait partie d’une force d’intervention d’élite chargée de trouver et d’éliminer ceux qui n’obéissent pas aux ordres des humains. </p>
+                </div>
+                <div class="fea-img pull-left">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="fea">
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <img src="./img/films/5.jpg" alt="">
+                  <h4>Kingsman : Le Cercle d'or</h4>
+                  <p style="text-align: justify;">KINGSMAN, l’élite du renseignement britannique en costume trois pièces, fait face à une menace sans précédent. Alors qu’une bombe s’abat et détruit leur quartier général, les agents font la découverte d’une puissante organisation alliée nommée Statesman, fondée il y a bien longtemps aux Etats-Unis.</p>
+                </div>
+                <div class="fea-img pull-left">
+
+                </div>
+              </div>
+            </div>
+
+            <div class="fea">
+              <div class="col-md-4">
+                <div class="heading pull-right">
+                  <img src="./img/films/6.jpg" alt="">
+                  <h4>Ça</h4>
+                  <p style="text-align: justify;">À Derry, dans le Maine, sept gamins ayant du mal à s'intégrer se sont regroupés au sein du "Club des Ratés". Rejetés par leurs camarades, ils sont les cibles favorites des gros durs de l'école. Ils ont aussi en commun d'avoir éprouvé leur plus grande terreur face à un terrible prédateur métamorphe qu'ils appellent "Ça"… </p>
+                </div>
+                <div class="fea-img pull-left">
+
+                </div>
+              </div>
+            </div>
 
 
         </div>
