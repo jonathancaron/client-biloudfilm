@@ -111,14 +111,15 @@ Navigation bar
 Banner
 ************************************/
 .banner{
-	background: url('../img/bg-banner.jpg') no-repeat center top;
+	background: url('../img/gif.gif') no-repeat center top;
+	height: 400px;
     background-size: cover;
-	min-height: 580px;
+	min-height: 400px;
     position: relative;
 }
 .bg-color{
 	background-color: RGBA(12, 11, 11, 0.82);
-	min-height: 580px;
+	min-height: 400px;
 }
 .text-dec{
 	font-size: 24px;

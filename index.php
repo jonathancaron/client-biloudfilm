@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Biloud Film</title>
-    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- =======================================================
-        Theme Name: Mentor
-        Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-        Author: BootstrapMade.com
-        Author URL: https://bootstrapmade.com
-    ======================================================= -->
+    <?php include('./requires/dblog.php'); ?>
   </head>
   <body>
     <!--Navigation bar-->
@@ -29,80 +22,31 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img src="./img/logo.png"></a>
+        <a class="navbar-brand" href="index.php"><img src="./img/logo.png"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#feature">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="#organisations">Bibliothèque</a></li>
-          <li class="btn-trial"><a href="#footer">Contact</a></li>
+          <li class="btn-trial"><a href="#contact">Contact</a></li>
         </ul>
         </div>
       </div>
     </nav>
     <!--/ Navigation bar-->
-    <!--Modal box-->
-    <div class="modal fade" id="login" role="dialog">
-      <div class="modal-dialog modal-sm">
 
-        <!-- Modal content no 1-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title text-center form-title">Login</h4>
-          </div>
-          <div class="modal-body padtrbl">
-
-            <div class="login-box-body">
-              <p class="login-box-msg">Sign in to start your session</p>
-              <div class="form-group">
-                <form name="" id="loginForm">
-                 <div class="form-group has-feedback"> <!----- username -------------->
-                      <input class="form-control" placeholder="Username"  id="loginid" type="text" autocomplete="off" />
-            <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span><!---Alredy exists  ! -->
-                      <span class="glyphicon glyphicon-user form-control-feedback"></span>
-                  </div>
-                  <div class="form-group has-feedback"><!----- password -------------->
-                      <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
-            <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
-                      <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                  </div>
-                  <div class="row">
-                      <div class="col-xs-12">
-                          <div class="checkbox icheck">
-                              <label>
-                                <input type="checkbox" id="loginrem" > Remember Me
-                              </label>
-                          </div>
-                      </div>
-                      <div class="col-xs-12">
-                          <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
-                      </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <!--/ Modal box-->
     <!--Banner-->
     <div class="banner">
       <div class="bg-color">
         <div class="container">
           <div class="row">
             <div class="banner-text text-center">
-              <div class="text-border">
-                <h2 class="text-dec">Trust & Quality</h2>
-              </div>
+  <br><br><br><br><br><br><br>
               <div class="intro-para text-center quote">
-                <p class="big-text">Learning Today . . . Leading Tomorrow.</p>
-                <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim repellat sapiente quos architecto<br>Laudantium enim repellat sapiente quos architecto</p>
-                <a href="#footer" class="btn get-quote">GET A QUOTE</a>
+                <p class="big-text">Retrouvez les dernières affiches et actualités de film.</p>
+                <p class="small-text">Plus de 5 ans d'existence et de stockage d'affiches.</p>
+
               </div>
-              <a href="#feature" class="mouse-hover"><div class="mouse"></div></a>
             </div>
           </div>
         </div>
@@ -209,40 +153,117 @@
       <div class="container">
         <div class="row">
           <div class="header-section text-center">
-            <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+            <h2>Formulaire de contact</h2>
             <hr class="bottom-line">
           </div>
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-              <div class="col-md-6 col-sm-6 col-xs-12 left">
-                <div class="form-group">
-                    <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                </div>
-              </div>
+          <div class="texteRight">
+            <br>
+              <?php
+              if(!empty($_POST)){
 
-              <div class="col-md-6 col-sm-6 col-xs-12 right">
-                <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                </div>
-              </div>
+                    /* EMAIL S£YSTEM
+                    $destinataire = 'jonathan.caron04@gmail.com';
+                    // Pour les champs $expediteur / $copie / $destinataire, séparer par une virgule s'il y a plusieurs adresses
+                    $expediteur = $_POST['email'];
 
-              <div class="col-xs-12">
-                <!-- Button -->
-                <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
-              </div>
-          </form>
+                    $objet = "test";
+
+                    $headers  = 'MIME-Version: 1.0' . "\n"; // Version MIME
+                    $headers .= 'Content-type: text/html; charset=ISO-8859-1'."\n"; // l'en-tete Content-type pour le format HTML
+                    $headers .= 'To: '.$destinataire."\n"; // Mail de reponse
+                    $headers .= 'From: "Nom_de_destinataire"<'.$expediteur.'>'."\n"; // Expediteur
+
+                    $message =  '<div style="width: 100%; text-align: center; font-weight: bold"> Bonjour '.$_POST['name'].'!<br>
+                                    '.$_POST['message'].'</div>';
+
+                    if(mail($destinataire, $objet, $message, $headers))
+                    {
+                        echo '<script languag="javascript" >alert("Votre message a bien été envoyé ");</script>';
+                    }
+                    else // Non envoyé
+                    {
+                        echo '<script languag="javascript">alert("Votre message n\'a pas pu être envoyé");</script>';
+                    }
+                    */
+                ?>
+                <p style="color:green">Votre message a bien été envoyé !</p>
+                <?php
+                error_reporting(E_ALL);
+                ini_set('display_errors', 1);
+                $pNom= $_POST["nom"];
+                $pEmail= $_POST["email"];
+                $pObjet= $_POST["objet"];
+                $pMessage= $_POST["message"];
+                $bdd->exec("INSERT INTO contact (nom, email, objet, message) VALUES ('$pNom', '$pEmail', '$pObjet', '$pMessage')");
+
+
+
+                ?>
+
+                <form action="index.php#contact" class="contactForm">
+                    <div class="col-md-6 col-sm-6 col-xs-12 left">
+                      <div class="form-group">
+                          <input type="text" name="nom" class="form-control form" id="nom" value="<?php echo $pNom; ?>" data-rule="minlen:4" data-msg="Veuillez entrer au minimum 4 caractères" disabled />
+                          <div class="validation"></div>
+                      </div>
+                      <div class="form-group">
+                          <input type="email" class="form-control" name="email" id="email" value="<?php echo $pEmail; ?>" data-rule="email" data-msg="Veuillez entrer un mail valide" disabled />
+                          <div class="validation"></div>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" name="objet" id="objet" value="<?php echo $pObjet; ?>" data-rule="minlen:4" data-msg="Veuillez entrer au minimum 8 caractères" disabled />
+                          <div class="validation"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12 right">
+                      <div class="form-group">
+                          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Veuillez inscrire un message" disabled><?php echo $pMessage; ?></textarea>
+                          <div class="validation"></div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                      <!-- Button -->
+                      <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">Retour</button>
+                    </div>
+                </form>
+
+              <?php
+              }
+              else{
+              ?>
+              <form action="index.php#contact" method="post" role="form" class="contactForm">
+                  <div class="col-md-6 col-sm-6 col-xs-12 left">
+                    <div class="form-group">
+                        <input type="text" name="nom" class="form-control form" id="nom" placeholder="Votre nom" data-rule="minlen:4" data-msg="Veuillez entrer au minimum 4 caractères" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Votre email" data-rule="email" data-msg="Veuillez entrer un mail valide" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="objet" id="objet" placeholder="Objet" data-rule="minlen:4" data-msg="Veuillez entrer au minimum 8 caractères" />
+                        <div class="validation"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-sm-6 col-xs-12 right">
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Veuillez inscrire un message" placeholder="Message"></textarea>
+                        <div class="validation"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12">
+                    <!-- Button -->
+                    <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">Envoyer</button>
+                  </div>
+              </form>
+              <?php } ?>
+
+            </div>
 
         </div>
       </div>
@@ -252,26 +273,6 @@
     <footer id="footer" class="footer">
       <div class="container text-center">
 
-      <h3>Start Your Free Trial Now!</h3>
-
-      <form class="mc-trial row">
-        <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
-          <div class=" controls">
-            <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
-          </div>
-        </div><!-- End email input -->
-        <div class="form-group col-md-3 col-sm-4">
-          <div class=" controls">
-            <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
-          </div>
-        </div><!-- End email input -->
-        <div class="col-md-2 col-sm-4">
-          <p>
-            <button name="submit" type="submit" class="btn btn-block btn-submit">
-            Submit <i class="fa fa-arrow-right"></i></button>
-          </p>
-        </div>
-      </form><!-- End newsletter-form -->
       <ul class="social-links">
         <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
         <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
@@ -279,7 +280,7 @@
         <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
         <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
       </ul>
-        ©2016 Mentor Theme. All rights reserved
+        ©2017 Mentor Theme. All rights reserved
         <div class="credits">
             <!--
                 All the links in the footer should remain intact.
@@ -287,7 +288,7 @@
                 Licensing information: https://bootstrapmade.com/license/
                 Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Mentor
             -->
-            Designed by <a href="https://bootstrapmade.com/">Free Bootstrap Themes</a>
+            Coding by <a href="https://bootstrapmade.com/">Jonathan Caron</a>
         </div>
       </div>
     </footer>
